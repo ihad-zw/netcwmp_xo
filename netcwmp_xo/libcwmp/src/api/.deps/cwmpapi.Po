@@ -1,0 +1,3 @@
+api/cwmpapi.o: api/cwmpapi.c /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

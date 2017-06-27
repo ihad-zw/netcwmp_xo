@@ -1,0 +1,109 @@
+
+{"cwmp":{"cmd":"GetParameterValues","ParameterList":[{"paraname":"Device.DeviceInfo.ProductClass","paravalue":{"type":"String"}},{"paraname":"Device.DeviceInfo.HardwareVersion","paravalue":{"type":"String"}}]}}
+
+{
+"cwmp":
+    {
+        "cmd":"GetParameterValues",
+        "ParameterList":
+            [
+                {
+                    "paraname":"Device.DeviceInfo.ProductClass",
+                    "paravalue":                   
+                        {
+                            "type":"xsd:string"
+                        }
+                        
+                },
+                {
+                    "paraname":"Device.DeviceInfo.HardwareVersion",
+                    "paravalue":
+                        {
+                            "type":"xsd:string"
+                        }
+               }
+            ]
+    }
+}
+
+
+{
+"cwmp":
+    {
+        "cmd":"GetParameterValuesResponse",
+        "ParameterList":
+            [
+                {
+                    "paraname":"Device.DeviceInfo.ProductClass",
+                    "paravalue":
+                    {
+                        "type":"xsd:string",
+                        "value":"9900B0",
+                        "rw":"1"
+                    },
+                    "paraname":"Device.DeviceInfo.HardwareVersion",
+                    "paravalue":
+                    {
+                        "type":"xsd:string",
+                        "value":"CHIHO3000HP",
+                        "rw":"1"
+                    }
+                }
+            ]
+    }
+}
+
+
+{
+"cwmp":
+    {
+        "cmd":"SetParameterValues",
+        "ParameterList":
+            [
+                {
+                    "paraname":"Device.DeviceInfo.ProductClass",
+                    "paravalue":
+                    {
+                        "type":"xsd:string",
+                        "value":"9900B0"
+                    },
+                    "paraname":"Device.DeviceInfo.HardwareVersion",
+                    "paravalue":
+                    {
+                        "type":"xsd:string",
+                        "value":"CHIHO3000HP"
+                    }
+                 }
+            ]
+    }
+}
+
+
+{
+"cwmp":
+    {
+        "cmd":"SetParameterValuesResponse",
+        "ParameterList":
+            [
+                {
+                    "paraname":"Device.DeviceInfo.ProductClass",
+                    "paravalue":
+                    {
+                        "status":"0"
+                    },
+                    "paraname":"Device.DeviceInfo.HardwareVersion",
+                    "paravalue":
+                    {
+                        "status":"0"
+                    },
+                }
+            ]
+            
+    }
+}
+
+
+GNU Autotools的使用方法 
+http://blog.csdn.net/scucj/article/details/6079052
+
+

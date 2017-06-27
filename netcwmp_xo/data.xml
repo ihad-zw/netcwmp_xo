@@ -1,0 +1,510 @@
+<itms>
+    <object name="Device."/>
+    <object name="Device.DeviceSummary" value="" rw="1" attribute="0" type="String(1024)" ininame="COMMON:DeviceSummary" />
+    <object name="Device.DeviceInfo."/>
+    <object name="Device.DeviceInfo.Manufacturer" value="" rw="1" attribute="0" type="String(64)" ininame="SYSTEM:Manufacturer" />
+    <object name="Device.DeviceInfo.ManufacturerOUI" value="" rw="1" attribute="0" type="String(64)" ininame="SYSTEM:ManufacturerOUI" />
+    <object name="Device.DeviceInfo.ModelName" value="" rw="1" attribute="0" type="String(64)" ininame="SYSTEM:ProductClass" />
+    <object name="Device.DeviceInfo.ModelID" value="" rw="1" attribute="0" type="String(64)" ininame="SYSTEM:ProductClass" />
+    <object name="Device.DeviceInfo.Description" value="" rw="1" attribute="0" type="String(256)" ininame="SYSTEM:Description" />  
+    <object name="Device.DeviceInfo.ProductClass" value="" rw="1" attribute="0" type="String(64)" ininame="SYSTEM:ProductClass" />
+    <object name="Device.DeviceInfo.SerialNumber" value="" rw="1" attribute="0" type="String(64)" ininame="SYSTEM:SerialNumber" />
+    <object name="Device.DeviceInfo.HardwareVersion" value="" rw="1" attribute="0" type="String(64)" ininame="SYSTEM:HardwareVersion" />
+    <object name="Device.DeviceInfo.SoftwareVersion" value="" rw="1" attribute="1" type="String(64)" change="0" ininame="SYSTEM:SoftwareVersion" />
+    <object name="Device.DeviceInfo.ConfigFileVersion" value="" rw="1" attribute="1" type="String(64)" change="0" ininame="SYSTEM:ConfigFileVersion" />
+    <object name="Device.DeviceInfo.EnabledOptions" value="" rw="1" attribute="0" type="String(1024)" ininame="SYSTEM:EnabledOptions" />
+    <object name="Device.DeviceInfo.AdditionalHardwareVersion" value="" rw="1" attribute="0" type="String(64)" ininame="SYSTEM:AdditionalHardwareVersion" />
+    <object name="Device.DeviceInfo.AdditionalSoftwareVersion" value="" rw="1" attribute="0" type="String(64)" ininame="SYSTEM:AdditionalSoftwareVersion" />
+    <object name="Device.DeviceInfo.ProvisioningCode" value="" rw="1" attribute="1" type="String(64)" change="0" ininame="SYSTEM:ProvisioningCode" />
+    <object name="Device.DeviceInfo.DeviceStatus" value="" rw="1" attribute="1" type="String(64)" change="0" ininame="" />
+    <object name="Device.DeviceInfo.UpTime" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.DeviceInfo.FirstUseDate" value="" rw="1" attribute="0" type="DateTime" ininame="" />
+    <object name="Device.DeviceInfo.DeviceLog" value="" rw="1" attribute="0" type="String(32k)" ininame="" />
+    <object name="Device.DeviceInfo.SoftwareVersionList."/>
+    <object name="Device.DeviceInfo.SoftwareVersionList.systemVersion" value="" rw="1" attribute="0" type="String(64)"  ininame="" />
+    <object name="Device.DeviceInfo.SoftwareVersionList.tmVersion" value="" rw="1" attribute="0" type="String(64)"  ininame="" />
+    <object name="Device.DeviceInfo.SoftwareVersionList.iptvVersion" value="" rw="1" attribute="0" type="String(64)"  ininame="" />
+    <object name="Device.DeviceInfo.SoftwareVersionList.imsVersion" value="" rw="1" attribute="0" type="String(64)"  ininame="" />
+    <object name="Device.DeviceInfo.SoftwareVersionList.launcherVersion" value="" rw="1" attribute="0" type="String(64)"  ininame="" />
+    <object name="Device.DeviceInfo.SoftwareVersionList.dlnaVersion" value="" rw="1" attribute="0" type="String(64)"  ininame="" />
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm."/>
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm.AlarmSwitch" value="0" rw="1" attribute="0" type="Boolean" ininame="" />
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm.AlarmReportLevel" value="1" rw="1" attribute="0" type="Integer" ininame="" />
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm.AlarmConfig."/>
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm.AlarmConfig.CPUAlarmValue" value="" rw="1" attribute="0" type="String(16)" ininame="" />
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm.AlarmConfig.MemoryAlarmValue" value="" rw="1" attribute="0" type="String(16)" ininame="" />
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm.AlarmConfig.DiskAlarmValue" value="" rw="1" attribute="0" type="String(16)" ininame="" />
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm.AlarmConfig.PacketsLostAlarmValue" value="" rw="1" attribute="0" type="String(16)" ininame="" />
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm.AlarmConfig.FramesLostAlarmValue" value="" rw="1" attribute="0" type="String(16)" ininame="" />
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm.AlarmConfig.CushionAlarmValue" value="" rw="1" attribute="0" type="String(16)" ininame="" />
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm.AlarmConfig.TimeLapseAlarmValue" value="" rw="1" attribute="0" type="String(16)" ininame="" />
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm.NumberOfAlarmEntries" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+    <object name="Device.DeviceInfo.X_CTC_IPTV_Alarm.{i}." entries="model">
+        <parameter name="Device.DeviceInfo.X_CTC_IPTV_Alarm.{i}.AlarmID" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+        <parameter name="Device.DeviceInfo.X_CTC_IPTV_Alarm.{i}.AlarmType" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+           <parameter name="Device.DeviceInfo.X_CTC_IPTV_Alarm.{i}.AlarmLevel" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+        <parameter name="Device.DeviceInfo.X_CTC_IPTV_Alarm.{i}.AlarmReason" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+        <parameter name="Device.DeviceInfo.X_CTC_IPTV_Alarm.{i}.AlarmTime" value="" rw="1" attribute="0" type="DataTime" ininame=""/>
+        <parameter name="Device.DeviceInfo.X_CTC_IPTV_Alarm.{i}.AlarmDetail" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    </object>
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage."/>
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.FtpEnable" value="0" rw="1" attribute="0" type="Boolean" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.FtpUserName" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.FtpPassword" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.FtpPort" value="" rw="1" attribute="0" type="Integer" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.TelnetEnable" value="0" rw="1" attribute="0" type="Boolean" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.TelnetUserName" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.TelnetPassword" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.TelnetPort" value="" rw="1" attribute="0" type="Integer" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.SSHEnable" value="0" rw="1" attribute="0" type="Boolean" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.SSHUserName" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.SSHPassword" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.SSHPort" value="" rw="1" attribute="0" type="Integer" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.TFTPEnable" value="0" rw="1" attribute="0" type="Boolean" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.TFTPUserName" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.TFTPPassword" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.TFTPPort" value="" rw="1" attribute="0" type="Integer" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.SNMPEnable" value="0" rw="1" attribute="0" type="Boolean" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.SNMPUserName" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.SNMPPassword" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.DeviceInfo.X_CT-COM_ServiceManage.SNMPPort" value="" rw="1" attribute="0" type="Integer" ininame="" />
+    <object name="Device.ManagementServer."/>
+    <object name="Device.ManagementServer.URL" value="" rw="1" attribute="1" type="String(256)" change="0" ininame="MSERVER:URL" setp="run_acschange"/>
+    <object name="Device.ManagementServer.URLBackup" value="" rw="1" attribute="1" type="String(256)" change="0"  ininame="" />
+    <object name="Device.ManagementServer.Username" value="" rw="1" attribute="0" type="String(256)" ininame="MSERVER:Username" />
+    <object name="Device.ManagementServer.Password" value="" rw="1" attribute="0" type="String(256)" ininame="MSERVER:Password" />
+    <object name="Device.ManagementServer.PeriodicInformEnable" value="" rw="1" attribute="0" type="Boolean" ininame="MSERVER:PeriodicInformEnable" />
+    <object name="Device.ManagementServer.PeriodicInformInterval" value="" rw="1" attribute="0" type="Int[1:]"  ininame="MSERVER:PeriodicInformInterval" setp="run_periodic"/>
+    <object name="Device.ManagementServer.PeriodicInformTime" value="" rw="1" attribute="0" type="Datetime" ininame="MSERVER:PeriodicInformTime" />
+    <object name="Device.ManagementServer.ParameterKey" value="" rw="1" attribute="0" type="String(32)" ininame="MSERVER:ParameterKey" />
+    <object name="Device.ManagementServer.ConnectionRequestURL" value="" rw="1" attribute="1" type="String(256)"  change="0"  ininame="MSERVER:ConnectionRequestURL" />
+    <object name="Device.ManagementServer.LastConnectedURL" value="" rw="1" attribute="0" type="String(256)" ininame="MSERVER:LastConnectedURL" />
+    <object name="Device.ManagementServer.ConnectionRequestUsername" value="" rw="1" attribute="1" type="String(256)" change="0" ininame="MSERVER:ConnectionRequestUsername" />
+    <object name="Device.ManagementServer.ConnectionRequestPassword" value="" rw="1" attribute="1" type="String(256)" change="0" ininame="MSERVER:ConnectionRequestPassword" />
+    <object name="Device.ManagementServer.UpgradesManaged" value="" rw="1" attribute="1" type="Boolean" change="0" ininame="MSERVER:UpgradesManaged" />
+    <object name="Device.ManagementServer.URLModifyFlag" value="" rw="1" attribute="0"  ininame="MSERVER:URLModifyFlag" />
+    <object name="Device.ManagementServer.KickURL" value="" rw="1" attribute="0" type="String(256)" ininame="MSERVER:KickURL" />
+    <object name="Device.ManagementServer.DownloadProgressURL" value="" rw="1" attribute="0" type="String(256)" ininame="MSERVER:DownloadProgressURL" />
+    <object name="Device.ManagementServer.UDPConnectionRequestAddress" value="" rw="1" attribute="0" type="String(256)"  ininame="" />
+    <object name="Device.ManagementServer.UDPConnectionRequestAddressNotificationLimit" value="" rw="1" attribute="0" type="unsignedInt" ininame="MSERVER:UDPConnectionRequestAddressNotificationLimit" />
+    <object name="Device.ManagementServer.STUNEnable" value="" rw="1" attribute="0" type="Boolean" ininame="MSERVER:STUNEnable" />   
+    <object name="Device.ManagementServer.STUNServerAddress" value="" rw="1" attribute="0" type="String(256)" ininame="MSERVER:STUNServerAddress" />
+    <object name="Device.ManagementServer.STUNServerPort" value="" rw="1" attribute="0" type="unsignedInt[0:65536]" ininame="MSERVER:STUNServerPort" />
+    <object name="Device.ManagementServer.STUNUsername" value="" rw="1" attribute="0" type="String(256)" ininame="MSERVER:STUNUsername" />
+    <object name="Device.ManagementServer.STUNPassword" value="" rw="1" attribute="0" type="String(256)" ininame="MSERVER:STUNPassword" />
+    <object name="Device.ManagementServer.STUNMaximumKeepAlivePeriod" value="" rw="1" attribute="0" type="int[-1:]" ininame="MSERVER:STUNMaximumKeepAlivePeriod" />
+    <object name="Device.ManagementServer.STUNMinimumKeepAlivePeriod" value="" rw="1" attribute="0" type="int[-1:]" ininame="MSERVER:STUNMinimumKeepAlivePeriod" />
+    <object name="Device.ManagementServer.NATDetected" value="" rw="1" attribute="0" type="int[-1:]" ininame="MSERVER:NATDetected" />
+    <object name="Device.GatewayInfo."/>
+    <object name="Device.GatewayInfo.ManufacturerOUI" value="" rw="1" attribute="0" type="String(6)" ininame="" />
+    <object name="Device.GatewayInfo.ProductClass" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.GatewayInfo.SerialNumber" value="" rw="1" attribute="0" type="String(64)" ininame="" />
+    <object name="Device.Config."/>
+    <object name="Device.Config.PersistentData" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.Config.ConfigFile" value="" rw="1" attribute="0" type="String(32k)" ininame="" />
+    <object name="Device.Time."/>
+    <object name="Device.Time.NTPServer1" value="" rw="1" attribute="0" type="String(64)" ininame="TIME:NTPServer1" />
+    <object name="Device.Time.NTPServer2" value="" rw="1" attribute="0" type="String(64)" ininame="TIME:NTPServer2" />
+    <object name="Device.Time.NTPServerInternet" value="" rw="1" attribute="0" type="String(64)" ininame="TIME:NTPServerInternet" />
+    <object name="Device.Time.CurrentLocalTime" value="" rw="1" attribute="0" type="DataTime" ininame="" />
+    <object name="Device.Time.LocalTimeZone" value="" rw="1" attribute="1" type="String(64)" change="0" ininame="TIME:LocalTimeZone" />
+    <object name="Device.UserInterface."/>
+    <object name="Device.UserInterface.Logo."/>
+    <object name="Device.UserInterface.Logo.X_CT-COM_BootPicURL" value="" rw="1" attribute="0" type="String(256)"  ininame="LOGO:X_CT-COM_BootPicURL" setp="bootpic"/>
+    <object name="Device.UserInterface.Logo.X_CT-COM_BootPic_Enable" value="" rw="1" attribute="0" type="Boolean"  ininame="LOGO:X_CT-COM_BootPic_Enable"/>
+    <object name="Device.UserInterface.Logo.X_CT-COM_BootPic_Result" value="" rw="1" attribute="0" type="unsignedInt"  ininame="LOGO:X_CT-COM_BootPic_Result"/>
+    <object name="Device.UserInterface.Logo.X_CT-COM_BootPic_Time" value="" rw="1" attribute="0" type="unsignedInt"  ininame="LOGO:X_CT-COM_BootPic_Time"/>
+    <object name="Device.UserInterface.Logo.X_CT-COM_StartPicURL" value="" rw="1" attribute="0" type="String(256)"  ininame="LOGO:X_CT-COM_StartPicURL" setp="startpic"/>
+    <object name="Device.UserInterface.Logo.X_CT-COM_StartPic_Enable" value="" rw="1" attribute="0" type="Boolean"  ininame="LOGO:X_CT-COM_StartPic_Enable"/>
+    <object name="Device.UserInterface.Logo.X_CT-COM_StartPic_Result" value="" rw="1" attribute="0" type="unsignedInt"  ininame="LOGO:X_CT-COM_StartPic_Result"/>
+    <object name="Device.UserInterface.Logo.X_CT-COM_StartPic_Time" value="" rw="1" attribute="0" type="unsignedInt"  ininame="LOGO:X_CT-COM_StartPic_Time"/>
+    <object name="Device.UserInterface.Logo.X_CT-COM_AuthenticatePicURL" value="" rw="1" attribute="0" type="String(256)"  ininame="LOGO:X_CT-COM_AuthenticatePicURL" setp="authenpic"/>
+    <object name="Device.UserInterface.Logo.X_CT-COM_AuthenticatePic_Enable" value="" rw="1" attribute="0" type="Boolean"  ininame="LOGO:X_CT-COM_AuthenticatePic_Enable"/>
+    <object name="Device.UserInterface.Logo.X_CT-COM_AuthenticatePic_Result" value="" rw="1" attribute="0" type="unsignedInt"  ininame="LOGO:X_CT-COM_AuthenticatePic_Result"/>
+    <object name="Device.UserInterface.Logo.X_CT-COM_AuthenticatePic_Time" value="" rw="1" attribute="0" type="unsignedInt"  ininame="LOGO:X_CT-COM_AuthenticatePic_Time"/>
+    <object name="Device.UserInterface.PasswordRequired" value="" rw="1" attribute="0" type="Boolean" ininame=""/>
+    <object name="Device.UserInterface.PasswordUserSelectable" value="" rw="1" attribute="0" type="Boolean" ininame=""/>
+    <object name="Device.UserInterface.UpgradeAvailable" value="" rw="1" attribute="0" type="Boolean" ininame=""/>
+    <object name="Device.UserInterface.WarrantyDate" value="" rw="1" attribute="0" type="DateTime" ininame=""/>
+    <object name="Device.UserInterface.ISPName" value="" rw="1" attribute="0" type="String(64)" ininame=""/>
+    <object name="Device.UserInterface.ISPHelpDesk" value="" rw="1" attribute="0" type="String(32)" ininame=""/>
+    <object name="Device.UserInterface.ISPHomePage" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.UserInterface.ISPHelpPage" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.UserInterface.ISPLogo" value="" rw="1" attribute="0" type="base64(5460)" ininame=""/>
+    <object name="Device.UserInterface.ISPLogoSize" value="" rw="1" attribute="0" type="unsignedInt[0:4095]" ininame=""/>
+    <object name="Device.UserInterface.ISPMailServer" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.UserInterface.ISPNewsServer" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.UserInterface.TextColor" value="" rw="1" attribute="0" type="String(6)" ininame=""/>
+    <object name="Device.UserInterface.BackgroundColor" value="" rw="1" attribute="0" type="String(6)" ininame=""/>
+    <object name="Device.UserInterface.ButtonColor" value="" rw="1" attribute="0" type="String(6)" ininame=""/>
+    <object name="Device.UserInterface.ButtonTextColor" value="" rw="1" attribute="0" type="String(6)" ininame=""/>
+    <object name="Device.UserInterface.AutoUpdateServer" value="" rw="1" attribute="0" type="String(256)" ininame="" setp="dhcpupdate"/>
+    <object name="Device.UserInterface.UserUpdateServer" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.UserInterface.AvailableLanguages" value="" rw="1" attribute="0" type="String(256)" ininame="COMMON:AvailableLanguages"/>
+    <object name="Device.UserInterface.CurrentLanguage" value="" rw="1" attribute="1" type="String(16)"  change="0" ininame="COMMON:CurrentLanguage"/>
+    <object name="Device.LAN."/>
+    <object name="Device.LAN.AddressingType" value="" rw="1" attribute="1" type="String(15)" change="0" ininame="LAN:AddressingType" setp="netchanged"/>
+    <object name="Device.LAN.IPAddress" value="" rw="1" attribute="1" type="String(15)" change="0" ininame="LAN:IPAddress" />
+    <object name="Device.LAN.SubnetMask" value="" rw="1" attribute="0" type="String(15)" ininame="LAN:SubnetMask" /> 
+    <object name="Device.LAN.DefaultGateway" value="" rw="1" attribute="0" type="String(15)" ininame="LAN:DefaultGateway" />
+    <object name="Device.LAN.DNSServers" value="" rw="1" attribute="1" type="String(256)" change="0" ininame="LAN:DNSServers" />
+    <object name="Device.LAN.MACAddress" value="" rw="1" attribute="1" type="String(17)" change="0" ininame="LAN:MACAddress" />
+    <object name="Device.LAN.MACAddressOverride" value="" rw="1" attribute="0" type="Boolean" ininame="" />
+    <object name="Device.LAN.IsSupportIPv6" value="" rw="1" attribute="0" type="Boolean"  ininame="" />  
+    <object name="Device.LAN.DHCPOptionNumberOfEntries" value="" rw="1" attribute="1" type="unsignedInt" change="0" ininame="" />
+    <object name="Device.LAN.Diagnostics."/>
+    <object name="Device.LAN.Diagnostics.DHCPOption."/>
+    <object name="Device.LAN.Diagnostics.DHCPOption.{i}." entries="model">
+        <parameter name="Device.LAN.Diagnostics.DHCPOption.{i}.Request" value="" rw="1" attribute="1" type="Boolean" change="0" ininame="" />
+        <parameter name="Device.LAN.Diagnostics.DHCPOption.{i}.Tag" value="" rw="1" attribute="1" type="unsignedInt[1:254]" change="0" ininame="" />
+        <parameter name="Device.LAN.Diagnostics.DHCPOption.{i}.Value" value="" rw="1" attribute="1" type="base64" change="0" ininame="" />
+    </object>
+    <object name="Device.LAN.Status."/>
+    <object name="Device.LAN.Status.ConnectionUpTime" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.TotalBytesSent" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.TotalBytesReceived" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.TotalPacketsSent" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.TotalPacketsReceived" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.CurrentDayInterval" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.CurrentDayBytesSent" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.CurrentDayBytesReceived" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.CurrentDayPacketsSent" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.CurrentDayPacketsReceived" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.QuarterHourInterval" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.QuarterHourBytesSent" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.QuarterHourBytesReceived" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.QuarterHourPacketsSent" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Status.QuarterHourPacketsReceived" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats."/>
+    <object name="Device.LAN.Diagnostics.Stats.ConnectionUpTime" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.TotalBytesSent" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.TotalBytesReceived" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.TotalPacketsSent" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.TotalPacketsReceived" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.CurrentDayInterval" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.CurrentDayBytesSent" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.CurrentDayBytesReceived" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.CurrentDayPacketsSent" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.CurrentDayPacketsReceived" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.QuarterHourInterval" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.QuarterHourBytesSent" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.QuarterHourBytesReceived" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.QuarterHourPacketsSent" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.Diagnostics.Stats.QuarterHourPacketsReceived" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.IPPingDiagnostics."/>
+    <object name="Device.LAN.IPPingDiagnostics.DiagnosticsState" value="" rw="1" attribute="0" type="String" ininame="" setp="run_pingfunc"/>
+    <object name="Device.LAN.IPPingDiagnostics.Host" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.LAN.IPPingDiagnostics.NumberOfRepetitions" value="" rw="1" attribute="0" type="unsignedInt[1:]" ininame="" />
+    <object name="Device.LAN.IPPingDiagnostics.Timeout" value="" rw="1" attribute="0" type="unsignedInt[1:]" ininame="" />
+    <object name="Device.LAN.IPPingDiagnostics.DataBlockSize" value="" rw="1" attribute="0" type="unsignedInt[1:65536]" ininame="" />
+    <object name="Device.LAN.IPPingDiagnostics.DSCP" value="" rw="1" attribute="0" type="unsignedInt[0:63]" ininame="" />
+    <object name="Device.LAN.IPPingDiagnostics.SuccessCount" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.IPPingDiagnostics.FailureCount" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.IPPingDiagnostics.AverageResponseTime" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.IPPingDiagnostics.MinimumResponseTime" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.IPPingDiagnostics.MaximumResponseTime" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.TraceRouteDiagnostics."/>
+    <object name="Device.LAN.TraceRouteDiagnostics.DiagnosticsState" value="" rw="1" attribute="0" type="String" ininame="" setp="run_tracefunc"/>
+    <object name="Device.LAN.TraceRouteDiagnostics.Host" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.LAN.TraceRouteDiagnostics.Timeout" value="" rw="1" attribute="0" type="unsignedInt[1:]" ininame="" />
+    <object name="Device.LAN.TraceRouteDiagnostics.MaxHopCount" value="" rw="1" attribute="0" type="unsignedInt[1:64]" ininame="" />
+    <object name="Device.LAN.TraceRouteDiagnostics.DSCP" value="" rw="1" attribute="0" type="unsignedInt[0:63]" ininame="" />
+    <object name="Device.LAN.TraceRouteDiagnostics.DataBlockSize" value="" rw="1" attribute="0" type="unsignedInt[1:65536]" ininame="" />
+    <object name="Device.LAN.TraceRouteDiagnostics.ResponseTime" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.TraceRouteDiagnostics.NumberOfRouteHops" value="" rw="1" attribute="0" type="unsignedInt" ininame="" />
+    <object name="Device.LAN.TraceRouteDiagnostics.RouteHops."/>
+    <object name="Device.LAN.TraceRouteDiagnostics.RouteHops.{i}." entries="model">
+        <parameter name="Device.LAN.TraceRouteDiagnostics.RouteHops.{i}.HopHost" value="" rw="1" attribute="0"  type="String(256)" ininame="" />
+    </object>
+    <object name="Device.DHCP."/>
+    <object name="Device.STBService."/>
+    <object name="Device.STBService.StreamingControlProtocols" value="" rw="1" attribute="1"  type="String" change="0"  ininame="STBService:StreamingControlProtocols" />
+    <object name="Device.STBService.StreamingTransportProtocols" value="" rw="1" attribute="1"  type="String" change="0"  ininame="STBService:StreamingControlProtocols" />
+    <object name="Device.STBService.StreamingTransportControlProtocols" value="" rw="1" attribute="1"  type="String" change="0"  ininame="STBService:StreamingTransportControlProtocols" />
+    <object name="Device.STBService.DownloadTransportProtocols" value="" rw="1" attribute="1"  type="String" change="0" ininame="STBService:DownloadTransportProtocols" />
+    <object name="Device.STBService.MultiplexType" value="" rw="1" attribute="1"  type="String" change="0" ininame="STBService:MultiplexType" />
+    <object name="Device.STBService.MaxDejitteringBufferSize" value="" rw="1" attribute="1" type="int[-1]" change="0" ininame="STBService:MaxDejitteringBufferSize" />
+    <object name="Device.STBService.AudioStandards" value="" rw="1" attribute="1" type="String(256)" change="0" ininame="STBService:AudioStandards" />
+    <object name="Device.STBService.VideoStandards" value="" rw="1" attribute="1" type="String(256)" change="0" ininame="STBService:VideoStandards" />    
+    <object name="Device.X_CTC_IPTV."/>
+    <object name="Device.X_CTC_IPTV.STBID" value="" rw="1" attribute="0" type="String(32)" ininame="SYSTEM:STBID" />
+    <object name="Device.X_CTC_IPTV.XMPP" value="" rw="1" attribute="0" type="String(256)" ininame="" />
+    <object name="Device.X_CTC_IPTV.PhyMemSize" value="" rw="1" attribute="0" type="String(32)" ininame="" />
+    <object name="Device.X_CTC_IPTV.StorageSize" value="" rw="1" attribute="0" type="String(32)" ininame="" />
+    <object name="Device.X_CTC_IPTV.ForceUpgrade" value="" rw="1" attribute="0" type="String(32)"  ininame="SYSTEM:ForceUpgrade" />
+    <object name="Device.X_CTC_IPTV.ServiceInfo."/>
+    <object name="Device.X_CTC_IPTV.ServiceInfo.ServiceList" value="" rw="1" attribute="1" rebootchange="" type="String(256)" change="0" ininame="SYSTEM:ServiceList "/>
+    <object name="Device.X_CTC_IPTV.ServiceInfo.UserID" value="" rw="1" attribute="1" rebootchange="" type="String(256)" change="0" ininame="SYSTEM:UserID" setp="setuserid"/>
+    <object name="Device.X_CTC_IPTV.ServiceInfo.UserPassword" value="" rw="1" attribute="1" rebootchange="" type="String(256)" change="0" ininame="SYSTEM:UserPassword" />
+    <object name="Device.X_CTC_IPTV.ServiceInfo.AuthURL" value="" rw="1" attribute="1" type="String(256)" change="0" ininame="SYSTEM:AuthURL" />
+    <object name="Device.X_CTC_IPTV.ServiceInfo.AuthURLBackup" value="" rw="1" attribute="1" type="String(256)" change="0" ininame="SYSTEM:AuthURLBackup" />
+    <object name="Device.X_CTC_IPTV.ServiceInfo.PPPoEID" value="" rw="1" attribute="1" rebootchange="" type="String(256)" change="0" ininame="SYSTEM:PPPoEID" />
+    <object name="Device.X_CTC_IPTV.ServiceInfo.PPPoEPassword" value="" rw="1" attribute="1" rebootchange="" type="String(256)" change="0" ininame="SYSTEM:PPPoEPassword" />
+    <object name="Device.X_CTC_IPTV.ServiceInfo.DHCPID" value="" rw="1" attribute="1" rebootchange="" type="String(256)" change="0" ininame="SYSTEM:DHCPID" />
+    <object name="Device.X_CTC_IPTV.ServiceInfo.DHCPPassword" value="" rw="1" attribute="1" rebootchange="" type="String(256)" change="0" ininame="SYSTEM:DHCPPassword" />
+    <object name="Device.X_CTC_IPTV.LogMsg." />
+    <object name="Device.X_CTC_IPTV.LogMsg.Enable" value="" rw="1" attribute="0" type="Boolean" ininame="" setp="logreport"/>
+    <object name="Device.X_CTC_IPTV.LogMsg.MsgOrFile" value="" rw="1" attribute="0" type="Integer" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.LogFtpServer" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.LogFtpUser" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.LogFtpPassword" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.Duration" value="" rw="1" attribute="0" type="Integer"  ininame=""/>   
+    <object name="Device.X_CTC_IPTV.LogMsg.RTSPInfo" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.HTTPInfo" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.IGMPInfo" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.PkgTotalOneSec" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.ByteTotalOneSec" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.PkgLostRate" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.AvarageRate" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.BUFFER" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.ERROR" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.LogMsg.VendorExt" value="" rw="1" attribute="0" type="String(256)" ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration."/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.Enable" value="1" rw="1" attribute="0"  ininame="" setp="run_statistic_main"/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.LogServerUrl" value="ftp://" rw="1" attribute="0" type="String(256)"  ininame="" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.LogUploadInterval" value="3600" rw="1" attribute="0" type="Int(32)"  ininame="" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.LogRecordInterval" value="3600" rw="1" attribute="0" type="Int(32)"  ininame="" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.StatInterval" value="" rw="1" attribute="0" type="Int(32)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.PacketsLostR1" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.PacketsLostR2" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.PacketsLostR3" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.PacketsLostR4" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.PacketsLostR5" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.HD_PacketsLostR1" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.HD_PacketsLostR2" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.HD_PacketsLostR3" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.HD_PacketsLostR4" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.HD_PacketsLostR5" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.BitRateR1" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.BitRateR2" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.BitRateR3" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.BitRateR4" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.BitRateR5" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.HD_BitRateR1" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.HD_BitRateR2" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.HD_BitRateR3" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.HD_BitRateR4" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.HD_BitRateR5" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.FramesLostR1" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.FramesLostR2" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.FramesLostR3" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.FramesLostR4" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.FramesLostR5" value="" rw="1" attribute="0" type="Int(8)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1."/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.Enable" value="" rw="1" attribute="0" type="unsignedInt" ininame="STATISTIC1:Enable" setp="run_statistic_main"/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.LogServerUrl" value="" rw="1" attribute="0"  type="String(256)" ininame="STATISTIC1:LogServerUrl" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.LogUploadInterval" value="" rw="1" attribute="0"  type="unsignedInt" ininame="STATISTIC1:LogUploadInterval" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.LogRecordInterval" value="" rw="1" attribute="0" type="unsignedInt"  ininame="STATISTIC1:LogRecordInterval" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.CPURateEnable" value="" rw="1" attribute="0" type="Boolean"  ininame="STATISTIC1:CPURateEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.MemRateEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC1:MemRateEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.JitterEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC1:JitterEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.MdiMLREnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC1:MdiMLREnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.FLREnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC1:FLREnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.FrameDelayEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC1:FrameDelayEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.FrameJitterEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC1:FrameJitterEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.MdiTypeEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC1:MdiTypeEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.MdiDFEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC1:MdiDFEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.CPURate" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.MemRate" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.Jitter" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.MdiMLR" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.FrameLR" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.FrameDelay" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.FrameJitter" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.MdiType" value="" rw="1" attribute="0" type="unsignedInt"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.MdiDF" value="" rw="1" attribute="0" type="unsignedInt" ininame=""/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.detectionsPeriod" value="" rw="1" attribute="0" type="unsignedInt" ininame="STATISTIC1:detectionsPeriod"/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.1.detectionsFreqency" value="" rw="1" attribute="0" type="unsignedInt" ininame="STATISTIC1:detectionsFreqency"/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2."/>
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.Enable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:Enable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.LogServerUrl" value="" rw="1" attribute="0" type="String(256)" ininame="STATISTIC2:LogServerUrl" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.LogUploadInterval" value="" rw="1" attribute="0" type="unsignedInt" ininame="STATISTIC2:LogUploadInterval" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.LogRecordInterval" value="" rw="1" attribute="0" type="unsignedInt" ininame="STATISTIC2:LogRecordInterval" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.BufUnderFlowNumbersEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:BufUnderFlowNumbersEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.BufOverFlowNumbersEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:BufOverFlowNumbersEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.AuthNumbersEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:AuthNumbersEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.AuthFailNumbersEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:AuthFailNumbersEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.MultiReqNumbersEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:MultiReqNumbersEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.MultiFailNumbersEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:MultiFailNumbersEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.VodReqNumbersEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:VodReqNumbersEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.VodFailNumbersEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:VodFailNumbersEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.ResponseDelayEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:ResponseDelayEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.ChannelSwitchDelayEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:ChannelSwitchDelayEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.AbnormalIntervalEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:AbnormalIntervalEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.AuthSuccRateEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:AuthSuccRateEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.PlayDurationEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:PlayDurationEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.BadDurationEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:BadDurationEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.AvailabilityEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:AvailabilityEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.ChannelNameEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:ChannelNameEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.ChannelAddressEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:ChannelAddressEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.TransmissionEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:TransmissionEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.ProgramStartTimeEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:ProgramStartTimeEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.ProgramEndTimeEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:ProgramEndTimeEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.JitterEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:JitterEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.MdiMLREnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:MdiMLREnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.MdiDFEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:MdiDFEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.BitRateEnable" value="" rw="1" attribute="0" type="Boolean" ininame="STATISTIC2:BitRateEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.VideoQualityEnable" value="" rw="1" attribute="0" type="unsignedInt" ininame="STATISTIC2:VideoQualityEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.ChannelRequestFrequencyEnable" value="" rw="1" attribute="0" type="unsignedInt" ininame="STATISTIC2:ChannelRequestFrequencyEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.AccessSuccessNumberEnable" value="" rw="1" attribute="0" type="unsignedInt" ininame="STATISTIC2:AccessSuccessNumberEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.AverageAccessTimeEnable" value="" rw="1" attribute="0" type="unsignedInt" ininame="STATISTIC2:AverageAccessTimeEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.WatchLongEnable" value="" rw="1" attribute="0" type="unsignedInt" ininame="STATISTIC2:WatchLongEnable" />
+    <object name="Device.X_CTC_IPTV.StatisticConfiguration.2.MediaStreamBandwidthEnable" value="" rw="1" attribute="0" type="unsignedInt" ininame="STATISTIC2:MediaStreamBandwidthEnable" />
+    <object name="Device.X_CTC_IPTV.ServiceStatistics."/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.Startpoint" value="" rw="1" attribute="0" type="String(14)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.Endpoint" value="" rw="1" attribute="0" type="String(14)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.AuthNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.AuthFailNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.AuthFailInfo" value="" rw="1" attribute="0" type="String(256)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiReqNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiRRT" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiFailInfo" value="" rw="1" attribute="0" type="String(256)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VodReqNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VodRRT" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VodFailNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VodFailInfo" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HTTPReqNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HTTPRRT" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HTTPFailNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HTTPFailInfo" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MutiAbendNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VODAbendNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MutiAbendUPNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VODUPAbendNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_MultiAbendNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_VODAbendNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_MultiUPAbendNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_VODUPAbendNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.PlayErrorNumbers" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.PlayErrorInfo" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiPacketsLostR1Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiPacketsLostR2Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiPacketsLostR3Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiPacketsLostR4Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiPacketsLostR5Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.FECMultiPacketsLostR1Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.FECMultiPacketsLostR2Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.FECMultiPacketsLostR3Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.FECMultiPacketsLostR4Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.FECMultiPacketsLostR5Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VODPacketsLostR1Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VODPacketsLostR2Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VODPacketsLostR3Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VODPacketsLostR4Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VODPacketsLostR5Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.ARQVODPacketsLostR1Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.ARQVODPacketsLostR2Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.ARQVODPacketsLostR3Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.ARQVODPacketsLostR4Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.ARQVODPacketsLostR5Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiBitRateR1Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiBitRateR2Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiBitRateR3Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiBitRateR4Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.MultiBitRateR5Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VODBitRateR1Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VODBitRateR2Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VODBitRateR3Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VODBitRateR4Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.VODBitRateR5Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_MultiPacketsLostR1Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_MultiPacketsLostR2Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_MultiPacketsLostR3Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_MultiPacketsLostR4Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_MultiPacketsLostR5Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_FECMultiPacketsLostR1Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_FECMultiPacketsLostR2Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_FECMultiPacketsLostR3Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_FECMultiPacketsLostR4Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_FECMultiPacketsLostR5Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_VODPacketsLostR1Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_VODPacketsLostR2Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_VODPacketsLostR3Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_VODPacketsLostR4Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_VODPacketsLostR5Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_VODBitRateR1Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_VODBitRateR2Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_VODBitRateR3Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_VODBitRateR4Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.HD_VODBitRateR5Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.BufferIncNmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.BufferDecNmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.FramesLostR1Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.FramesLostR2Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.FramesLostR3Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.FramesLostR4Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>
+    <object name="Device.X_CTC_IPTV.ServiceStatistics.FramesLostR5Nmb" value="" rw="1" attribute="0" type="Int(16)"  ininame=""/>   
+    <object name="Device.X_CTC_IPTV.IMSInfo."/>
+    <object name="Device.X_CTC_IPTV.IMSInfo.BACDomainName" value="" rw="1" attribute="1" type="String(2048)" change="0" ininame="IMSINFO:BACDomainName" />
+    <object name="Device.X_CTC_IPTV.IMSInfo.BACAddress1" value="" rw="1" attribute="1" type="String(128)" change="0" ininame="IMSINFO:BACAddress1" />
+    <object name="Device.X_CTC_IPTV.IMSInfo.BACAddress2" value="" rw="1" attribute="1" type="String(128)" change="0" ininame="IMSINFO:BACAddress2" />
+    <object name="Device.X_CTC_IPTV.IMSInfo.UserID" value="" rw="1" attribute="1" type="String(36)" change="0" ininame="IMSINFO:UserID" />
+    <object name="Device.X_CTC_IPTV.IMSInfo.Password" value="" rw="1" attribute="1" type="String(16)" change="0" ininame="IMSINFO:Password" />
+    <object name="Device.X_CTC_IPTV.ROUTETable."/>
+    <object name="Device.X_CTC_IPTV.ROUTETable.SoftwareVersion" value="" rw="1" attribute="0" type="String"  ininame="ROUTETABLE:SoftwareVersion" />
+    <object name="Device.X_CTC_IPTV.ROUTETable.RouteVersion" value="" rw="1" attribute="0" type="String"  ininame="ROUTETABLE:RouteVersion" />
+    <object name="Device.X_CTC_IPTV.ROUTETable.TerminalInfoType" value="" rw="1" attribute="0" type="String"  ininame="ROUTETABLE:TerminalInfoType" />
+    <object name="Device.X_CTC_IPTV.ROUTETable.TerminalInfoSoftver" value="" rw="1" attribute="0" type="String"  ininame="ROUTETABLE:TerminalInfoSoftver" />
+    <object name="Device.X_CTC_IPTV.ROUTETable.DNSSlect" value="" rw="1" attribute="0" type="String"  ininame="ROUTETABLE:DNSSlect" />
+    <object name="Device.X_CTC_IPTV.ROUTETable.VLANID" value="85" rw="1" attribute="0" type="String"  ininame="ROUTETABLE:VLANID" />
+    <object name="Device.X_CTC_IPTV.ROUTETable.RouteVer" value="" rw="1" attribute="0" type="String"  ininame="ROUTETABLE:RouteVer" />
+    <object name="Device.X_CTC_IPTV.ROUTETable.NumberOfRoute" value="50" rw="1" attribute="0" type="String"  ininame="ROUTETABLE:NumberOfRoute" />    
+    <object name="Device.X_CTC_IPTV.ROUTETable.RouteList.{i}." entries="model">
+        <parameter name="Device.X_CTC_IPTV.ROUTETable.RouteList.{i}.Destination" value="" rw="1" attribute="0"  type="String"  ininame="" />
+        <parameter name="Device.X_CTC_IPTV.ROUTETable.RouteList.{i}.Netmask" value="" rw="1" attribute="0"  type="String"  ininame="" />
+        <parameter name="Device.X_CTC_IPTV.ROUTETable.RouteList.{i}.Plane" value="" rw="1" attribute="0"  type="String"  ininame="" />
+    </object>
+    <object name="Device.X_CTC_IPTV.UserInfo."/>
+    <object name="Device.X_CTC_IPTV.UserInfo.UserName" value="" rw="1" attribute="0" type="String"  ininame="" />
+    <object name="Device.X_CTC_IPTV.UserInfo.UserId" value="" rw="1" attribute="0" type="String"  ininame="" />
+    <object name="Device.X_CTC_IPTV.UserInfo.Status" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.X_CTC_IPTV.UserInfo.Limit" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.X_CTC_IPTV.UserInfo.Times" value="" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.X_CTC_IPTV.UserInfo.Result" value="99" rw="1" attribute="0" type="unsignedInt"  ininame="" />
+    <object name="Device.X_CTC_IPTV.UserInfo.ServiceNum" value="" rw="1" attribute="0" type="int"  ininame="" />
+    <object name="Device.X_CTC_IPTV.UserInfo.ServiceName" value="" rw="1" attribute="0" type="String"  ininame="USERINFO:ServiceName" />
+    <object name="Device.X_CTC_IPTV.LauncherInfo."/>
+    <object name="Device.X_CTC_IPTV.LauncherInfo.LauncherAccount" value="" rw="1" attribute="0" type="String(32)"  ininame="LAUNCHERINFO:LauncherAccount" />
+    <object name="Device.X_CTC_IPTV.LauncherInfo.LauncherPassword" value="" rw="1" attribute="0" type="String(256)"  ininame="LAUNCHERINFO:LauncherPassword" />
+    <object name="Device.X_CTC_IPTV.LauncherInfo.LauncherURL" value="" rw="1" attribute="0" type="String(256)"  ininame="LAUNCHERINFO:LauncherURL" />
+    <object name="Device.System."/>
+    <object name="Device.System.Info."/>
+    <object name="Device.System.Info.firstboot" value="" rw="1" attribute="0" type="String(32)" ininame="INFO:firstboot" />
+    <object name="Device.System.Info.mreboot" value="" rw="1" attribute="0" type="String(32)" ininame="INFO:mreboot" />
+    <object name="Device.System.Info.updated" value="" rw="1" attribute="0" type="String(32)" ininame="INFO:updated" />
+    <object name="Device.System.Info.updatedurl" value="" rw="1" attribute="0" type="String(512)" ininame="INFO:updatedurl" />
+    <object name="Device.X_00E0FC."/>
+    <object name="Device.X_00E0FC.SQMConfiguration."/>
+    <object name="Device.X_00E0FC.SQMConfiguration.SQMLisenPort" value="" rw="1" attribute="0" type="unsignedInt" ininame="SQM:SQMLisenPort" />
+    <object name="Device.X_00E0FC.SQMConfiguration.SQMServerPort" value="" rw="1" attribute="0" type="unsignedInt" ininame="SQM:SQMServerPort" />
+    <object name="Device.IptvSet."/>
+    <object name="Device.IptvSet.Net" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:Net" />
+    <object name="Device.IptvSet.NetMode" value="" rw="1" attribute="0" type="unsignedInt"  ininame="IPTVSET:NetMode" />
+    <object name="Device.IptvSet.NetSwitchMode" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:NetSwitchMode" />
+    <object name="Device.IptvSet.CertificateServerPlatform" value="" rw="1" attribute="0" type="unsignedInt"  ininame="IPTVSET:CertificateServerPlatform" />
+    <object name="Device.IptvSet.AuthURL_HW" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:AuthURL_HW" />
+    <object name="Device.IptvSet.AuthURLBackup_HW" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:AuthURLBackup_HW" />
+    <object name="Device.IptvSet.AuthURL_ZX20" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:AuthURL_ZX20" />
+    <object name="Device.IptvSet.AuthURLBackup_ZX20" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:AuthURLBackup_ZX20" />
+    <object name="Device.IptvSet.AuthURL_ZX30" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:AuthURL_ZX30" />
+    <object name="Device.IptvSet.AuthURLBackup_ZX30" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:AuthURLBackup_ZX30" />
+    <object name="Device.IptvSet.AuthURL_Custom" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:AuthURL_Custom" />
+    <object name="Device.IptvSet.AuthURLBackup_Custom" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:AuthURLBackup_Custom" />
+    <object name="Device.IptvSet.TVMS."/>
+    <object name="Device.IptvSet.TVMS.HeartBeatURL" value="" rw="1" attribute="0" type="String(256)" ininame="IPTVSET:HeartBeatURL" />
+    <object name="Device.IptvSet.TVMS.VodURL" value="" rw="1" attribute="0" type="String(256)" ininame="IPTVSET:VodURL" />
+    <object name="Device.IptvSet.TVMS.HeartBeatCycle" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:HeartBeatCycle" />
+    <object name="Device.IptvSet.TVMS.DelayTime" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:DelayTime" />
+    <object name="Device.IptvSet.BGMusic" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:BGMusic" />
+    <object name="Device.IptvSet.MenuStyle" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:MenuStyle" />
+    <object name="Device.IptvSet.SleepStatus" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:SleepStatus" />       
+    <object name="Device.IptvSet.SleepTime" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:SleepTime" />     
+    <object name="Device.IptvSet.SupportHD" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:SupportHD" /> 
+    <object name="Device.IptvSet.DirectPlay" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:DirectPlay" />  
+    <object name="Device.IptvSet.LastChannelNo" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:LastChannelNo" />   
+    <object name="Device.IptvSet.WifiApStatus" value="" rw="1" attribute="0" type="String(32)" ininame="IPTVSET:WifiApStatus" />   
+    <object name="Device.IptvSet.Security" value="" rw="1" attribute="0" type="unsignedInt" ininame="IPTVSET:Security" />   
+    <object name="Device.IptvSet.AP_SSID" value="" rw="1" attribute="0" type="String(64)" ininame="IPTVSET:AP_SSID" />   
+    <object name="Device.IptvSet.AP_PSD" value="" rw="1" attribute="0" type="String(64)" ininame="IPTVSET:AP_PSD" />   
+ </itms>
+ 

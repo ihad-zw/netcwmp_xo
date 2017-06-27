@@ -1,0 +1,6 @@
+cwmpapi.o: cwmpapi.c /usr/include/stdc-predef.h \
+ ../../libcwmp/include/cwmp/cwmpapi.h
+
+/usr/include/stdc-predef.h:
+
+../../libcwmp/include/cwmp/cwmpapi.h:

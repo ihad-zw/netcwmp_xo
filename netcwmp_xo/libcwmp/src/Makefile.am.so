@@ -1,0 +1,13 @@
+lib_LTLIBRARIES = libcwmp.la
+libcwmp_la_SOURCES = buffer.c  cfg.c  cwmp.c  http.c ssl.c  ini.c  log.c  md5.c  memory.c   session.c  util.c event.c queue.c model.c  callback.c hashtab.c paratab.c netlink.c  cJSON.c httpd.c  cwmpapi.c httpjson.c
+
+AM_CFLAGS = -Wall -DUSE_CWMP_MEMORY_POOL -DSYS_DATA_MODE -fPIC -I./  -I$(top_srcdir)/libcwmp/src/inc  -I$(top_srcdir)/libpool/include  -I$(top_srcdir)/libxmlet/include   -I$(top_srcdir)/libcwmp/include -I$(top_srcdir)/../libXmlParse
+
+
+
+
+
+
+
+
+

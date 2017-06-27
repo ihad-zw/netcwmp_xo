@@ -1,0 +1,5 @@
+list.o: list.c /usr/include/stdc-predef.h ../../libcwmp/include/list.h
+
+/usr/include/stdc-predef.h:
+
+../../libcwmp/include/list.h:

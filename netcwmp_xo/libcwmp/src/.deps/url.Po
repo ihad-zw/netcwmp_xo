@@ -1,0 +1,5 @@
+url.o: url.c /usr/include/stdc-predef.h ../../libcwmp/include/cwmp/url.h
+
+/usr/include/stdc-predef.h:
+
+../../libcwmp/include/cwmp/url.h:

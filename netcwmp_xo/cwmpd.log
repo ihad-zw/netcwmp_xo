@@ -1,0 +1,271 @@
+cwmp_global_pool=0x9124a010,0x48
+
+TRACE: cwmp_set_var()
+
+cwmp_event_set_value begin, event=0, value=1, (null)
+
+TRACE: cwmp_conf_init()
+
+url:http://192.168.126.136:8080/openacs/acs
+mf:(null)
+oui:9900B0
+sn:0010039900B000100001
+name:9900B0
+pc:IHO-3000
+httpd port:7750
+
+TRACE: cwmp_model_load_parameter()
+
+model load: xml node name is itms
+
+ENV: SOAP-ENV, ENC: SOAP-ENC
+SOAP-ENV:Header
+SOAP-ENV:Body
+SOAP-ENV:Envelope
+SOAP-ENC:arrayType
+
+ConnectionRequestURL  =  http://192.168.126.135:7750
+
+__cpe_set_igd_ms_value__@line 36____ param_name:Device.ManagementServer.ConnectionRequestURL , value= http://192.168.126.135:7750
+
+TRACE: cwmp_agent_start_session()
+
+New request from ACS
+
+session timeout is 60
+session stutus: New START
+
+TRACE: http_parse_url()
+
+scheme:   [http]
+user:     []
+password: []
+host:     [192.168.126.136]
+port:     [8080]
+uri: [/openacs/acs]
+
+dest create url is http://192.168.126.136:8080/openacs/acs
+session connect: dest url is http://192.168.126.136:8080/openacs/acs, acs url is http://192.168.126.136:8080/openacs/acs
+session connect using ssl?(no)
+
+dest host: 192.168.126.136, dest port: 8080
+0x3 0x901f 0x10, 2290002112
+
+___http_socket_connect____@232___
+
+session stutus: INFORM
+
+TRACE: cwmp_agent_get_active_event()
+
+TRACE: cwmp_event_file_save()
+
+session stutus: INFORM2
+
+session stutus: INFORM3
+
+TRACE: cwmp_session_create_inform_message()
+
+TRACE: cwmp_session_create_header()
+
+TRACE: cwmp_session_create_inform_device()
+
+TRACE: cwmp_session_create_inform_parameters()
+
+Not found param node: Device.DeviceInfo.SpecVersion
+
+TRACE: cwmp_create_inform_message()
+
+TRACE: cwmp_create_envelope_node()
+
+ENV: SOAP-ENV, ENC: SOAP-ENC
+
+TRACE: cwmp_create_header_node()
+
+TRACE: cwmp_create_body_node()
+
+TRACE: cwmp_create_device_id_node()
+
+TRACE: cwmp_create_event_node()
+
+TRACE: cwmp_create_max_envelope_node()
+
+TRACE: cwmp_create_current_time_node()
+
+TRACE: cwmp_create_retry_count_node()
+
+TRACE: cwmp_create_parameter_list_node()
+
+created parameter list: [20]
+
+session stutus: SEND
+session data request length: 4440
+TRACE: cwmp_agent_send_request()
+
+TRACE: cwmp_session_send_request()
+
+session dest url: http://192.168.126.136:8080/openacs/acs
+http socket write buffer fd:3, length:160,  [
+POST /openacs/acs HTTP/1.1
+Host: 192.168.126.136:8080
+User-Agent: CPE Netcwmp Agent
+Accept: */*
+Content-Type: text/xml; charset=utf-8
+Content-Length: 0
+
+
+]
+TRACE: http_read_header()
+
+http read header length: 182, [
+HTTP/1.1 500 Internal Server Error
+Server: Apache-Coyote/1.1
+Content-Type: text/html;charset=utf-8
+Content-Length: 1552
+Date: Tue, 15 Dec 2015 05:31:58 GMT
+Connection: close
+
+
+]
+Http read response code is (500)
+
+http read response failed. return code is 500, 500
+http socket write buffer fd:3, length:4714,  [
+POST /openacs/acs HTTP/1.1
+Host: 192.168.126.136:8080
+User-Agent: CPE Netcwmp Agent
+Accept: */*
+Content-Type: text/xml; charset=utf-8
+Content-Length: 4440
+Authorization: Digest username="cpe", realm="", nonce="", uri="", response="aa29fb0bb3adf6e3e3fb28ab0156bca3"
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:xsd="http://www.w3.org/1999/XMLSchema" xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+<SOAP-ENV:Header>
+<cwmp:ID SOAP-ENV:mustUnderstand="1">1</cwmp:ID>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+<cwmp:Inform>
+<DeviceId xsi:type="cwmp:DeviceIdStruct">
+<Manufacturer xsi:type="xsd:string"></Manufacturer>
+<OUI xsi:type="xsd:string">9900B0</OUI>
+<ProductClass xsi:type="xsd:string">IHO-3000</ProductClass>
+<SerialNumber xsi:type="xsd:string">0010039900B000100001</SerialNumber>
+</DeviceId>
+<Event SOAP-ENC:arrayType="cwmp:EventStruct[1]">
+<EventStruct>
+<EventCode xsi:type="xsd:string">0 BOOTSTRAP</EventCode>
+<CommandKey></CommandKey>
+</EventStruct>
+</Event>
+<MaxEnvelopes xsi:type="xsd:unsignedInt">1</MaxEnvelopes>
+<CurrentTime xsi:type="xsd:dateTime">2015-12-15T13:31:58</CurrentTime>
+<RetryCount xsi:type="xsd:unsignedInt">0</RetryCount>
+<ParameterList SOAP-ENC:arrayType="cwmp:ParameterValueStruct[20]">
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.DeviceSummary</Name>
+<Value xsi:type="xsd:string">changhong_4k_iptv_stb</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.DeviceInfo.Manufacturer</Name>
+<Value xsi:type="xsd:string"></Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.DeviceInfo.ManufacturerOUI</Name>
+<Value xsi:type="xsd:string">9900B0</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.DeviceInfo.ProductClass</Name>
+<Value xsi:type="xsd:string">IHO-3000</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.DeviceInfo.SerialNumber</Name>
+<Value xsi:type="xsd:string">0010039900B000100001</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.DeviceInfo.SpecVersion</Name>
+<Value xsi:type="xsd:string"></Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.DeviceInfo.HardwareVersion</Name>
+<Value xsi:type="xsd:string">CHIHO3000JX</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.DeviceInfo.SoftwareVersion</Name>
+<Value xsi:type="xsd:string">CHIHO3000JXP0001</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.DeviceInfo.ProvisioningCode</Name>
+<Value xsi:type="xsd:string">0</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.ManagementServer.ConnectionRequestURL</Name>
+<Value xsi:type="xsd:string">http://192.168.126.135:7750</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.ManagementServer.ParameterKey</Name>
+<Value xsi:type="xsd:string"></Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.ManagementServer.Username</Name>
+<Value xsi:type="xsd:string">cpe</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.ManagementServer.Password</Name>
+<Value xsi:type="xsd:string">cpe</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.ManagementServer.ConnectionRequestUsername</Name>
+<Value xsi:type="xsd:string">cpe</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.ManagementServer.ConnectionRequestPassword</Name>
+<Value xsi:type="xsd:string">cpe</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.ManagementServer.URL</Name>
+<Value xsi:type="xsd:string">http://192.168.126.136:8080/openacs/acs</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.LAN.IPAddress</Name>
+<Value xsi:type="xsd:string">192.168.126.135</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.LAN.MACAddress</Name>
+<Value xsi:type="xsd:string">00:0C:29:12:D9:70</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.LAN.AddressingType</Name>
+<Value xsi:type="xsd:string">PPPoE</Value>
+</ParameterValueStruct>
+<ParameterValueStruct>
+<Name xsi:type="xsd:string">Device.X_CTC_IPTV.STBID</Name>
+<Value xsi:type="xsd:string">0010039900B000100001982F3C0E3352</Value>
+</ParameterValueStruct>
+</ParameterList>
+</cwmp:Inform>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+]
+session data sended OK, rv=0
+session stutus: RECV
+TRACE: http_read_header()
+
+recv, CANNOT READ 1 char
+http read response failed. return code is -1, 0
+__cwmp_agent_start_session___@321__rv=-1
+
+session stutus: END
+session stutus: EXIT
+TRACE: http_socket_close()
+
+session stutus: EXIT
+TRACE: cwmp_agent_run_tasks()
+
+queue is empty.
+no more task to run
+No new request from ACS
+
+No new request from ACS
+
+No new request from ACS
+
